@@ -1,3 +1,5 @@
+package conection;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -9,7 +11,7 @@ public class Conxion {
     private String pass = "";
 
     //Constructor
-    Conxion ()
+    public  Conxion ()
     {
         try {
             con = DriverManager.getConnection(url, user, pass);
